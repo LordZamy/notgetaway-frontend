@@ -46,17 +46,17 @@ class StreamContainer extends Component {
   }
 
   render() {
-    const playerWidth = this.state.width / 3.5;
-    const playerHeight = window.innerHeight / 4;
+    const playerWidth = this.state.width / 2.6;
+    const playerHeight = window.innerHeight / 2.9;
 
     const { playing } = this.state;
 
     return (
       <div className="stream-container">
         <div className="stream-player-container" ref={node => this.containerNode = node}>
-          <StreamPlayer height={playerHeight} width={playerWidth} name="Camera 1" onReady={this.onPlayerReady} playing={playing} updateParentRef={this.updatePlayerRef(0)} onProgress={this.onProgress} />
-          <StreamPlayer height={playerHeight} width={playerWidth} name="Camera 2" onReady={this.onPlayerReady} playing={playing} muted={true} updateParentRef={this.updatePlayerRef(1)} />
-          <StreamPlayer height={playerHeight} width={playerWidth} name="Camera 3" onReady={this.onPlayerReady} playing={playing} muted={true} updateParentRef={this.updatePlayerRef(2)} />
+          <StreamPlayer height={playerHeight} width={playerWidth} name="Camera 1" onReady={this.onPlayerReady} playing={playing} updateParentRef={this.updatePlayerRef(0)} onProgress={this.onProgress} url="https://www.youtube.com/watch?v=psfFJR3vZ78" />
+          <StreamPlayer height={playerHeight} width={playerWidth} name="Camera 2" onReady={this.onPlayerReady} playing={playing} muted={true} updateParentRef={this.updatePlayerRef(1)} url="https://www.youtube.com/watch?v=g1dyA8Lfemc" />
+          <StreamPlayer height={playerHeight} width={playerWidth} name="Camera 3" onReady={this.onPlayerReady} playing={playing} muted={true} updateParentRef={this.updatePlayerRef(2)} url="https://www.youtube.com/watch?v=_9pavMzUY-c" />
         </div>
         <div className="stream-controls-container">
           <FloatingActionButton style={playerButtonStyles} onClick={this.onPlayPauseClick}>

@@ -9,6 +9,7 @@ type DefaultProps = {
   muted: boolean,
   updateParentRef: Function,
   onProgress: Function,
+  url: string
 }
 
 type Props = DefaultProps & {
@@ -25,6 +26,7 @@ class StreamPlayer extends Component {
     updateParentRef: () => {},
     onProgress: () => {},
     muted: false,
+    url: 'https://www.youtube.com/watch?v=nANXA3CsUpY'
   }
 
   props: Props;
@@ -39,7 +41,8 @@ class StreamPlayer extends Component {
       width,
       updateParentRef,
       onProgress,
-      muted
+      muted,
+      url
     } = this.props;
 
     return (
@@ -52,7 +55,7 @@ class StreamPlayer extends Component {
           onReady={onReady}
           onProgress={onProgress}
           playing={playing}
-          url='https://www.youtube.com/watch?v=nANXA3CsUpY'
+          url={url}
           width={width}
           muted={muted}
         />
