@@ -100,7 +100,6 @@ class StreamContainer extends Component {
 
   onProgress = (progress) => {
     if (!this.state.seeking) {
-      console.log(progress);
       this.setState({seekValue: progress.played});
     }
   }

@@ -57,7 +57,7 @@ const TextFieldForm = () => (
       <TextField inputStyle={styles.textInputStyle} hintText="LT0 1243" hintStyle={styles.hintStyle} floatingLabelText="Licence Plate:" floatingLabelStyle={styles.floatingLabelStyle} maxLength={38} fullWidth={true} underlineShow={false} />
       <Divider />
     </Paper>
-    <Paper zDepth={2} className="form-container">
+    <Paper zDepth={2} className="color-container">
       <ColorPicker/>
     </Paper>
   </div>

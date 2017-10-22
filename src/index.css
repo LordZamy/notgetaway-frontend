@@ -29,7 +29,7 @@ body {
 }
 
 .form-container {
-  text-align: center;
+  /*text-align: center;*/
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -38,8 +38,14 @@ body {
 }
 
 .div-form {
-  padding-left: 40%;
-  padding-right: 40%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.color-container > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .button {
