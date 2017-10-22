@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import AppBar from 'material-ui/AppBar';
 import TextField from './TextFieldForm.js'
-import ColorPicker from './ColorPicker.js';
+import Button from './Button.js'
 
 
 import StreamContainer from './StreamContainer';
@@ -20,7 +20,7 @@ class App extends Component {
         <StreamContainer />
         <TextField/>
         <br/>
-        <ColorPicker/>
+        <Button/>
       </div>
     );
   }

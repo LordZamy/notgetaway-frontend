@@ -28,6 +28,20 @@ body {
   text-align: center;
 }
 
-.TextFieldForm {
-  background-color: black;
+.form-container {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div-form {
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+.button {
+  text-align: center;
 }

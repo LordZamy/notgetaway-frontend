@@ -6,7 +6,7 @@ class ColorPicker extends React.Component {
 
   render(){
       return(
-        <div>
+        <div style={{padding:'1em'}}>
             <CirclePicker/>
         </div>
       )
