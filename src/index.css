@@ -2,4 +2,28 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #424242;
+}
+
+.stream-player-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stream-player {
+  padding: 1em;
+  text-align: center;
+}
+
+.stream-player-name {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.stream-controls-container {
+  width: 60%;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
 }
